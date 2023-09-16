@@ -1,0 +1,1 @@
+# Escendit.Extensions.Hosting.Cassandra
