@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Pack="true" PackagePath="" Include="README.md"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Hosting\Cassandra\Escendit.Extensions.Hosting.Cassandra.csproj"/>
+    </ItemGroup>
+</Project>
