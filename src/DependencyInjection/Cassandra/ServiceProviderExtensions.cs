@@ -19,7 +19,7 @@ public static class ServiceProviderExtensions
     /// </summary>
     /// <param name="serviceProvider">The service provider.</param>
     /// <returns>The cassandra client.</returns>
-    public static ICluster GetCassandraClient(this IServiceProvider serviceProvider)
+    public static ICluster? GetCassandraClient(this IServiceProvider serviceProvider)
     {
         return serviceProvider
             .GetServiceByName<ICluster>(CassandraClientOptions.DefaultOptionsKey);
@@ -31,7 +31,7 @@ public static class ServiceProviderExtensions
     /// <param name="serviceProvider">The service provider.</param>
     /// <param name="name">The name.</param>
     /// <returns>The cassandra client.</returns>
-    public static ICluster GetCassandraClient(this IServiceProvider serviceProvider, string name)
+    public static ICluster? GetCassandraClient(this IServiceProvider serviceProvider, string name)
     {
         return serviceProvider
             .GetServiceByName<ICluster>(name);
