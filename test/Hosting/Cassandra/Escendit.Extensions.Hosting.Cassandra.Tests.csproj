@@ -3,4 +3,7 @@
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
     </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\src\Hosting\Cassandra\Escendit.Extensions.Hosting.Cassandra.csproj" />
+    </ItemGroup>
 </Project>
