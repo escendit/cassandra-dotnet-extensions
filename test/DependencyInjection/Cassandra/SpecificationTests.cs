@@ -7,6 +7,7 @@ using Collections;
 using Fixtures;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
+using Xunit.Categories;
 
 /// <summary>
 /// Specification Tests.
@@ -29,7 +30,8 @@ public class SpecificationTests
     /// Test Creation of Service Collection.
     /// </summary>
     [Fact]
-    public void CreateCollectionTest()
+    [UnitTest]
+    public void Spec_CreateCollectionTest()
     {
         var services = _serviceCollectionFixture.CreateServiceCollection();
         Assert.NotNull(services);
@@ -40,6 +42,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="host">The host.</param>
     [Theory]
+    [UnitTest]
     [InlineData("test1")]
     [InlineData("test2")]
     public void Spec_AddCassandraClientOptionsAsDefaultWithOptions(string host)
@@ -55,6 +58,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="name">The name.</param>
     [Theory]
+    [UnitTest]
     [InlineData("test1")]
     [InlineData("test2")]
     public void Spec_AddCassandraClientOptionsAsDefaultWithOptionsBuilder(string name)
@@ -71,6 +75,7 @@ public class SpecificationTests
     /// <param name="name">The name.</param>
     /// <param name="host">The host.</param>
     [Theory]
+    [UnitTest]
     [InlineData("test", "localhost")]
     [InlineData("abcd", "::1")]
     public void Spec_AddCassandraClientOptionsWithOptions(string name, string host)
@@ -87,6 +92,7 @@ public class SpecificationTests
     /// <param name="name">The name.</param>
     /// <param name="binding">The binding.</param>
     [Theory]
+    [UnitTest]
     [InlineData("name1", "binding1")]
     [InlineData("name2", "binding2")]
     public void Spec_AddCassandraClientOptionsWithOptionsBuilder(string name, string binding)
@@ -102,6 +108,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="host">The host.</param>
     [Theory]
+    [UnitTest]
     [InlineData("host1")]
     [InlineData("host2")]
     public void Spec_AddCassandraClientAsDefaultWithOptions(string host)
@@ -117,6 +124,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="binding">The binding.</param>
     [Theory]
+    [UnitTest]
     [InlineData("binding1")]
     [InlineData("binding2")]
     public void Spec_AddCassandraClientAsDefaultWithOptionsBuilder(string binding)
@@ -133,6 +141,7 @@ public class SpecificationTests
     /// <param name="name">The name.</param>
     /// <param name="host">The host.</param>
     [Theory]
+    [UnitTest]
     [InlineData("name1", "host1")]
     [InlineData("name2", "host2")]
     public void Spec_AddCassandraClientWithOptions(string name, string host)
@@ -149,6 +158,7 @@ public class SpecificationTests
     /// <param name="name">The name.</param>
     /// <param name="binding">The building.</param>
     [Theory]
+    [UnitTest]
     [InlineData("name1", "binding1")]
     [InlineData("name2", "binding2")]
     public void Spec_AddCassandraClientWithOptionsBuilder(string name, string binding)
@@ -164,6 +174,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="host">The host.</param>
     [Theory]
+    [UnitTest]
     [InlineData("host1")]
     [InlineData("host2")]
     public void Spec_AddCassandraClientFromOptionsAsDefault(string host)
@@ -182,6 +193,7 @@ public class SpecificationTests
     /// <param name="option">The options.</param>
     /// <param name="host">The host.</param>
     [Theory]
+    [UnitTest]
     [InlineData("name1", "option1", "host1")]
     [InlineData("name2", "option2", "host2")]
     public void Spec_AddCassandraClientFromOptions(string name, string option, string host)
@@ -197,6 +209,7 @@ public class SpecificationTests
     /// Test Getting a Cassandra Client As Default.
     /// </summary>
     [Fact]
+    [UnitTest]
     public void Spec_GetRequiredCassandraClientAsDefault()
     {
         var serviceProvider = _serviceCollectionFixture.CreateServiceProvider("Default");
@@ -209,6 +222,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="name">The name.</param>
     [Theory]
+    [UnitTest]
     [InlineData("name1")]
     [InlineData("name2")]
     public void Spec_GetRequiredCassandraClient(string name)
@@ -222,6 +236,7 @@ public class SpecificationTests
     /// Test Getting a Cassandra Client.
     /// </summary>
     [Fact]
+    [UnitTest]
     public void Spec_GetCassandraClientAsDefault()
     {
         var serviceProvider = _serviceCollectionFixture.CreateServiceProvider("Default");
@@ -234,6 +249,7 @@ public class SpecificationTests
     /// </summary>
     /// <param name="name">The name.</param>
     [Theory]
+    [UnitTest]
     [InlineData("name1")]
     [InlineData("name2")]
     public void Spec_GetCassandraClient(string name)
