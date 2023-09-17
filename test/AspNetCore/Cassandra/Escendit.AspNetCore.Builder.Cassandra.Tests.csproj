@@ -3,4 +3,10 @@
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
     </PropertyGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\src\AspNetCore\Cassandra\Escendit.AspNetCore.Builder.Cassandra.csproj" />
+    </ItemGroup>
 </Project>
