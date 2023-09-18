@@ -1,4 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Description>Cassandra &amp; ScyllaDB Client Host Builder Extensions.</Description>
+    </PropertyGroup>
     <ItemGroup>
         <None Pack="true" PackagePath="" Include="README.md"/>
     </ItemGroup>
