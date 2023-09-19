@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Description>Cassandra &amp; ScyllaDB Client Host Builder Extensions.</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Pack="true" PackagePath="" Include="README.md"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions"/>
+        <PackageReference Include="Microsoft.Extensions.Options"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\DependencyInjection\Cassandra\Escendit.Extensions.DependencyInjection.Cassandra.csproj"/>
+    </ItemGroup>
+</Project>

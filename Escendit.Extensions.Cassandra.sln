@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AAE237FB-357D-48A8-A200-79739D85A95F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7A3CFE79-BFC5-4C63-AA6F-D2D89740AB2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escendit.Extensions.Hosting.Cassandra", "src\Hosting\Cassandra\Escendit.Extensions.Hosting.Cassandra.csproj", "{AEC6F8A6-A9B3-4A47-B0B8-C2128F8C45A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{A792D73A-BC59-4694-8886-382BECB97174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCore", "AspNetCore", "{5156475B-3E7F-4417-9C0B-1287CD699368}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{E1F4435C-8B17-4A61-BF38-91B8F824F854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escendit.Extensions.DependencyInjection.Cassandra", "src\DependencyInjection\Cassandra\Escendit.Extensions.DependencyInjection.Cassandra.csproj", "{7DD028BC-8F1F-4F54-8E25-9C5BBF83F236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escendit.AspNetCore.Builder.Cassandra", "src\AspNetCore\Cassandra\Escendit.AspNetCore.Builder.Cassandra.csproj", "{9BC2E57F-06E4-4F0B-9CC2-60E784D8EB39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCore", "AspNetCore", "{DC42040C-F53A-4A63-885E-022F95AF6939}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{A3326FEB-8379-473D-A70F-90B491C3437B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{F0D7F488-CE7B-4DF3-A8D8-CE311585519A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escendit.AspNetCore.Builder.Cassandra.Tests", "test\AspNetCore\Cassandra\Escendit.AspNetCore.Builder.Cassandra.Tests.csproj", "{8D68DDFB-36C9-4190-B1AD-2D5D65AA3227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escendit.Extensions.DependencyInjection.Cassandra.Tests", "test\DependencyInjection\Cassandra\Escendit.Extensions.DependencyInjection.Cassandra.Tests.csproj", "{7A37C9B6-80FB-4894-9AA4-E65768D23022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escendit.Extensions.Hosting.Cassandra.Tests", "test\Hosting\Cassandra\Escendit.Extensions.Hosting.Cassandra.Tests.csproj", "{86E75860-2D57-4C23-8AC3-23C371ADE4FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A792D73A-BC59-4694-8886-382BECB97174} = {AAE237FB-357D-48A8-A200-79739D85A95F}
+		{AEC6F8A6-A9B3-4A47-B0B8-C2128F8C45A0} = {A792D73A-BC59-4694-8886-382BECB97174}
+		{5156475B-3E7F-4417-9C0B-1287CD699368} = {AAE237FB-357D-48A8-A200-79739D85A95F}
+		{E1F4435C-8B17-4A61-BF38-91B8F824F854} = {AAE237FB-357D-48A8-A200-79739D85A95F}
+		{7DD028BC-8F1F-4F54-8E25-9C5BBF83F236} = {E1F4435C-8B17-4A61-BF38-91B8F824F854}
+		{9BC2E57F-06E4-4F0B-9CC2-60E784D8EB39} = {5156475B-3E7F-4417-9C0B-1287CD699368}
+		{DC42040C-F53A-4A63-885E-022F95AF6939} = {7A3CFE79-BFC5-4C63-AA6F-D2D89740AB2A}
+		{A3326FEB-8379-473D-A70F-90B491C3437B} = {7A3CFE79-BFC5-4C63-AA6F-D2D89740AB2A}
+		{F0D7F488-CE7B-4DF3-A8D8-CE311585519A} = {7A3CFE79-BFC5-4C63-AA6F-D2D89740AB2A}
+		{8D68DDFB-36C9-4190-B1AD-2D5D65AA3227} = {DC42040C-F53A-4A63-885E-022F95AF6939}
+		{7A37C9B6-80FB-4894-9AA4-E65768D23022} = {A3326FEB-8379-473D-A70F-90B491C3437B}
+		{86E75860-2D57-4C23-8AC3-23C371ADE4FA} = {F0D7F488-CE7B-4DF3-A8D8-CE311585519A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC6F8A6-A9B3-4A47-B0B8-C2128F8C45A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC6F8A6-A9B3-4A47-B0B8-C2128F8C45A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC6F8A6-A9B3-4A47-B0B8-C2128F8C45A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC6F8A6-A9B3-4A47-B0B8-C2128F8C45A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD028BC-8F1F-4F54-8E25-9C5BBF83F236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD028BC-8F1F-4F54-8E25-9C5BBF83F236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD028BC-8F1F-4F54-8E25-9C5BBF83F236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD028BC-8F1F-4F54-8E25-9C5BBF83F236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC2E57F-06E4-4F0B-9CC2-60E784D8EB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC2E57F-06E4-4F0B-9CC2-60E784D8EB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC2E57F-06E4-4F0B-9CC2-60E784D8EB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC2E57F-06E4-4F0B-9CC2-60E784D8EB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D68DDFB-36C9-4190-B1AD-2D5D65AA3227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D68DDFB-36C9-4190-B1AD-2D5D65AA3227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D68DDFB-36C9-4190-B1AD-2D5D65AA3227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D68DDFB-36C9-4190-B1AD-2D5D65AA3227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A37C9B6-80FB-4894-9AA4-E65768D23022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A37C9B6-80FB-4894-9AA4-E65768D23022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A37C9B6-80FB-4894-9AA4-E65768D23022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A37C9B6-80FB-4894-9AA4-E65768D23022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E75860-2D57-4C23-8AC3-23C371ADE4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E75860-2D57-4C23-8AC3-23C371ADE4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E75860-2D57-4C23-8AC3-23C371ADE4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E75860-2D57-4C23-8AC3-23C371ADE4FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

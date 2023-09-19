@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Description>Cassandra &amp; ScyllaDB Client Service Collection Extensions.</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Pack="true" PackagePath="" Include="README.md"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="CassandraCSharpDriver"/>
+        <PackageReference Include="Microsoft.Extensions.Options"/>
+        <PackageReference Include="Microsoft.Orleans.Core" Condition="'$(TargetFramework)' == 'net7.0'"/>
+    </ItemGroup>
+</Project>
