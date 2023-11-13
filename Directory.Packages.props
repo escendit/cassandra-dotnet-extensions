@@ -16,7 +16,7 @@
         <PackageVersion Include="Escendit.Tools.SourceLink.GitHub" Version="0.4.0"/>
         <PackageVersion Include="GitVersion.MsBuild" Version="5.12.0"/>
         <PackageVersion Include="JunitXml.TestLogger" Version="3.0.134"/>
-        <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.7.2"/>
+        <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="7.0.1" Condition="'$(TargetFramework)' == 'net7.0'"/>
         <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" Condition="'$(TargetFramework)' == 'net7.0'"/>
         <PackageVersion Include="Microsoft.Extensions.Options" Version="7.0.1" Condition="'$(TargetFramework)' == 'net7.0'"/>
